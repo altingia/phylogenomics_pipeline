@@ -19,19 +19,23 @@ Kazutaka Katoh, Daron M. Standley, MAFFT Multiple Sequence Alignment Software Ve
 Stajich JE, Block D, Boulez K, et al. The Bioperl toolkit: Perl modules for the life sciences. Genome Res. 2002;12(10):1611-1618. doi:10.1101/gr.361602
 
 Installation:
-1. the pipeline phylogenomics_4dtvs.pl need BioPerl; 
-1a. >perl -MCPAN -e shell
-cpan>install Bundle::CPAN
-cpan>q
+1. the pipeline phylogenomics_4dtvs.pl need BioPerl
+  1a. >perl -MCPAN -e shell
+      cpan>install Bundle::CPAN
+      cpan>q
+      
 1b. upgrade cpan
->cpan
-cpan>install Module::Build
-cpan>o conf prefer_installer MB
-cpan>o conf commit
-cpan>q
-cpan>install Bio::SeqIO
+    >cpan
+    cpan>install Module::Build
+    cpan>o conf prefer_installer MB
+    cpan>o conf commit
+    cpan>q
+    
 1c. install two modules
-cpan>install Bio::AlignIO
-cpan>install Bio::AlignI
+    cpan>install Bio::SeqIO
+    cpan>install Bio::AlignIO
+    cpan>install Bio::AlignI
 other binary scripts  were ready for use.
+
+the orhogroups_list can be obtained used the perl script summary.pl
 
