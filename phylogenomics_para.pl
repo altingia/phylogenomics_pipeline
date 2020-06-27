@@ -93,10 +93,11 @@ references:
                 foreach my $key (keys %sp){
                  my $name=$sp{$key};
                     $best=~s/$key/$name/g;
-                    push @astral_trees,$best;
                }
+                push @astral_trees,$best;
                 @besttree=();
            }
+                 %sp=();
 } 
      close ORTH;
  my $temp=join '\n',@astral_trees;
