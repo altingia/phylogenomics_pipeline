@@ -22,7 +22,7 @@ while(<IN>){
                   }
              }@orths;                
          @orths=();
-      my $orths1=join "\t",@orths1;
+      my $orths1=join " ",@orths1;
          @orths1=();  
       my $sp_num=keys %sp;
       my $gene_num=0;
