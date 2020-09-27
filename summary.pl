@@ -6,7 +6,7 @@ open(IN, "<$ARGV[0]")||die "$!";
 open(OUT1, ">$ARGV[1]")||die "$!";
 open(OUT2, ">$ARGV[2]")||die "$!";
 
-my @sp=("amtri","artha","cedem","eufer","gibil","lichi","lifor","metru","muacu","orsat","peame","potri","vivin");
+my @sp=("amtri","artha","cedem","eufer","gibil","lichi","lifor","metru","muacu","orsat","peame","potri","vivin");              # specie tags 
    print OUT2 "OrthID\tamtri\tartha\tcedem\teufer\tgibil\tlichi\tlifor\tmetru\tmuacu\torsat\tpeame\tpotri\tvivim\n";
 while(<IN>){
          chomp $_;
@@ -16,7 +16,7 @@ while(<IN>){
       my @orths1;
          map { 
                my $sp=(split/\|/,$_)[0];
-                  if($sp ne "pinig"){
+                  if($sp ne "pinig"){                                                               #species tag to be removed
                      $sp{$sp}++;
                      push @orths1,$_;
                   }
